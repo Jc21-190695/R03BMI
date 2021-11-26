@@ -39,6 +39,31 @@ namespace R03BMI
             try
             {
                 BMI = w / (h * h);
+
+                if (BMI < 18.50)
+                {
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で低体重です。";
+                }
+                else if (BMI < 25.00)
+                {
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で普通体重です。";
+                }
+                else if (BMI < 30.00)
+                {
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(1度)です。";
+                }
+                else if (BMI < 35.00)
+                {
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(2度)です。";
+                }
+                else if (BMI < 40.00)
+                {
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(3度)です。";
+                }
+                else if (BMI >= 40.00)
+                {
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(4度)です。";
+                }
             }
             catch (FormatException ex)
             {
