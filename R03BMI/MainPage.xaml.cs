@@ -68,7 +68,7 @@ namespace R03BMI
             catch (FormatException ex)
             {
                 Console.WriteLine(ex);
-                heighit.Text = "!!!";
+                result.Text = "!!!";
             }
         }
     }
