@@ -42,27 +42,27 @@ namespace R03BMI
 
                 if (BMI < 18.50)
                 {
-                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で低体重です。";
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + Math.Round(BMI, 2, MidpointRounding.AwayFromZero) + "で低体重です。";
                 }
                 else if (BMI < 25.00)
                 {
-                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で普通体重です。";
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + Math.Round(BMI, 2, MidpointRounding.AwayFromZero) + "で普通体重です。";
                 }
                 else if (BMI < 30.00)
                 {
-                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(1度)です。";
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + Math.Round(BMI, 2, MidpointRounding.AwayFromZero) + "で肥満(1度)です。";
                 }
                 else if (BMI < 35.00)
                 {
-                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(2度)です。";
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + Math.Round(BMI, 2, MidpointRounding.AwayFromZero) + "で肥満(2度)です。";
                 }
                 else if (BMI < 40.00)
                 {
-                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(3度)です。";
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + Math.Round(BMI, 2, MidpointRounding.AwayFromZero) + "で肥満(3度)です。";
                 }
                 else if (BMI >= 40.00)
                 {
-                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + BMI + "で肥満(4度)です。";
+                    result.Text = "身長" + height + "体重" + weight + "の人のBMIは" + Math.Round(BMI, 2, MidpointRounding.AwayFromZero) + "で肥満(4度)です。";
                 }
             }
             catch (FormatException ex)
